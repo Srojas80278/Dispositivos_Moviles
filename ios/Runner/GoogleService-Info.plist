@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBZtOPt7VkTVNTCDPo9AlH5EL0ZsUwFKc0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>397098309356</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.salondebellezaproyecto</string>
+	<key>PROJECT_ID</key>
+	<string>salon-de-belleza-proyec-ar2gvp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>salon-de-belleza-proyec-ar2gvp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:397098309356:ios:944996567f87dadf0d77c9</string>
+</dict>
+</plist>
