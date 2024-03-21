@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -155,7 +156,7 @@ class _InsertInventarioWidgetState extends State<InsertInventarioWidget> {
                           builder: (alertDialogContext) {
                             return AlertDialog(
                               title: Text('NUEVO'),
-                              content: Text('Inventario Guardado!!!'),
+                              content: Text('Inventario guardado!!!'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
@@ -166,8 +167,15 @@ class _InsertInventarioWidgetState extends State<InsertInventarioWidget> {
                             );
                           },
                         );
+                        setState(() {
+                          _model.txtnombreController?.clear();
+                        });
                       },
                       text: 'GUARDAR',
+                      icon: Icon(
+                        Icons.create_new_folder_sharp,
+                        size: 15.0,
+                      ),
                       options: FFButtonOptions(
                         height: 40.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -186,6 +194,28 @@ class _InsertInventarioWidgetState extends State<InsertInventarioWidget> {
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: MediaQuery.sizeOf(context).width * 0.96,
+                      height: MediaQuery.sizeOf(context).height * 0.69,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: Image.asset(
+                            'assets/images/inventario1.png',
+                          ).image,
+                        ),
                       ),
                     ),
                   ],
